@@ -1,0 +1,5 @@
+datasources:25b761d201a2731493442bc41f1fdebc17eba59d
+commandlineoptions:bc112598bbcece4ede3bebefac945b8d1a567a8d
+suitesfrom:no-suites-from-option
+file:22fe4e745bcceafe5dfc4973bc522e46d59a239d
+--suite Testcases.Application.INSTANCE01

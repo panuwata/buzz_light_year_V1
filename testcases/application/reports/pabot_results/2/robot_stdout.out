@@ -1,0 +1,14 @@
+==============================================================================
+Application                                                                   
+==============================================================================
+Application.INSTANCE01                                                        
+==============================================================================
+INSTANCE01 - Verify that customer able to sign in and sign out app... | PASS |
+------------------------------------------------------------------------------
+Application.INSTANCE01                                                | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Application                                                           | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Output:  /Users/tordoppio/Doppio-Automation/ebay-testing/testcases/application/reports/pabot_results/2/output.xml

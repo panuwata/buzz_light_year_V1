@@ -1,0 +1,55 @@
+[ WARN ] Imported resource file '/Users/tordoppio/Doppio-Automation/ebay-testing/keywords/application/common.robot' is empty.
+[ ERROR ] Error in file '/Users/tordoppio/Doppio-Automation/ebay-testing/resouces/application/import.robot' on line 16: Resource file '/Users/tordoppio/Doppio-Automation/ebay-testing/keywords/application/features/test01.robot' does not exist.
+[ ERROR ] Error in file '/Users/tordoppio/Doppio-Automation/ebay-testing/resouces/application/import.robot' on line 17: Resource file '/Users/tordoppio/Doppio-Automation/ebay-testing/keywords/application/pages/test01.robot' does not exist.
+[ ERROR ] Exception in default exception handler
+Traceback (most recent call last):
+  File "/Users/tordoppio/Library/Python/3.11/lib/python/site-packages/prompt_toolkit/eventloop/posix.py", line 155, in _run_task
+    t()
+  File "/Users/tordoppio/Library/Python/3.11/lib/python/site-packages/prompt_toolkit/eventloop/context.py", line 116, in new_func
+    return func(*a, **kw)
+           ^^^^^^^^^^^^^^
+  File "/Users/tordoppio/Library/Python/3.11/lib/python/site-packages/prompt_toolkit/application/application.py", line 753, in cpr_not_supported_callback
+    run_in_terminal(in_terminal)
+  File "/Users/tordoppio/Library/Python/3.11/lib/python/site-packages/prompt_toolkit/application/run_in_terminal.py", line 50, in run_in_terminal
+    return run_coroutine_in_terminal(async_func, render_cli_done=render_cli_done)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tordoppio/Library/Python/3.11/lib/python/site-packages/prompt_toolkit/application/run_in_terminal.py", line 71, in run_coroutine_in_terminal
+    assert app._is_running
+AssertionError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/tordoppio/Library/Python/3.11/lib/python/site-packages/prompt_toolkit/eventloop/base.py", line 132, in call_exception_handler
+    self._exception_handler(context)
+  File "/Users/tordoppio/Library/Python/3.11/lib/python/site-packages/prompt_toolkit/application/application.py", line 729, in handle_exception
+    run_coroutine_in_terminal(print_exception)
+  File "/Users/tordoppio/Library/Python/3.11/lib/python/site-packages/prompt_toolkit/application/run_in_terminal.py", line 71, in run_coroutine_in_terminal
+    assert app._is_running
+AssertionError
+[ ERROR ] Exception in default exception handler
+Traceback (most recent call last):
+  File "/Users/tordoppio/Library/Python/3.11/lib/python/site-packages/prompt_toolkit/eventloop/posix.py", line 155, in _run_task
+    t()
+  File "/Users/tordoppio/Library/Python/3.11/lib/python/site-packages/prompt_toolkit/eventloop/context.py", line 116, in new_func
+    return func(*a, **kw)
+           ^^^^^^^^^^^^^^
+  File "/Users/tordoppio/Library/Python/3.11/lib/python/site-packages/prompt_toolkit/application/application.py", line 753, in cpr_not_supported_callback
+    run_in_terminal(in_terminal)
+  File "/Users/tordoppio/Library/Python/3.11/lib/python/site-packages/prompt_toolkit/application/run_in_terminal.py", line 50, in run_in_terminal
+    return run_coroutine_in_terminal(async_func, render_cli_done=render_cli_done)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tordoppio/Library/Python/3.11/lib/python/site-packages/prompt_toolkit/application/run_in_terminal.py", line 71, in run_coroutine_in_terminal
+    assert app._is_running
+AssertionError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/tordoppio/Library/Python/3.11/lib/python/site-packages/prompt_toolkit/eventloop/base.py", line 132, in call_exception_handler
+    self._exception_handler(context)
+  File "/Users/tordoppio/Library/Python/3.11/lib/python/site-packages/prompt_toolkit/application/application.py", line 729, in handle_exception
+    run_coroutine_in_terminal(print_exception)
+  File "/Users/tordoppio/Library/Python/3.11/lib/python/site-packages/prompt_toolkit/application/run_in_terminal.py", line 71, in run_coroutine_in_terminal
+    assert app._is_running
+AssertionError

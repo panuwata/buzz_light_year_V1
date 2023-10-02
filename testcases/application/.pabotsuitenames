@@ -1,0 +1,8 @@
+datasources:a2508b0c202058c747512e79a60feb58f6a25349
+commandlineoptions:bc112598bbcece4ede3bebefac945b8d1a567a8d
+suitesfrom:no-suites-from-option
+file:e2be8825dcdaa96e49db89c313ad162dad49e0dd
+--suite Application.INSTANCE03
+--suite Application.INSTANCE02
+--suite Application.INSTANCE01
+--suite Application.INSTANCE04

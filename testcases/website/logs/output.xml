@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.11.3 on darwin)" generated="20230929 12:03:02.858" rpa="false" schemaversion="2">
+<suite id="s1" name="Website" source="/Users/tordoppio/Doppio-Automation/ebay-testing/testcases/website">
+<suite id="s1-s1" name="INSTANCE01" source="/Users/tordoppio/Doppio-Automation/ebay-testing/testcases/website/INSTANCE01.robot">
+<test id="s1-s1-t1" name="INSTANCE01 - Verify">
+<kw name="common_website.Open ebay website">
+<msg timestamp="20230929 12:03:03.417" level="FAIL">No keyword with name 'common_website.Open ebay website' found.</msg>
+<status status="FAIL" starttime="20230929 12:03:03.417" endtime="20230929 12:03:03.417"/>
+</kw>
+<kw name="Input search keywords">
+<arg>cola</arg>
+<status status="NOT RUN" starttime="20230929 12:03:03.418" endtime="20230929 12:03:03.418"/>
+</kw>
+<kw name="Click search button">
+<status status="NOT RUN" starttime="20230929 12:03:03.418" endtime="20230929 12:03:03.418"/>
+</kw>
+<kw name="Debug" library="DebugLibrary">
+<doc>Open a interactive shell, run any RobotFramework keywords.</doc>
+<status status="NOT RUN" starttime="20230929 12:03:03.418" endtime="20230929 12:03:03.418"/>
+</kw>
+<status status="FAIL" starttime="20230929 12:03:03.414" endtime="20230929 12:03:03.418">No keyword with name 'common_website.Open ebay website' found.</status>
+</test>
+<status status="FAIL" starttime="20230929 12:03:02.866" endtime="20230929 12:03:03.418"/>
+</suite>
+<status status="FAIL" starttime="20230929 12:03:02.858" endtime="20230929 12:03:03.418"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Website">Website</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="INSTANCE01">Website.INSTANCE01</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230929 12:03:03.413" level="ERROR">Error in file '/Users/tordoppio/Doppio-Automation/ebay-testing/resouces/website/import.robot' on line 11: Variable file '/Users/tordoppio/Doppio-Automation/ebay-testing/resouces/application/settings/setting.yaml' does not exist.</msg>
+<msg timestamp="20230929 12:03:03.413" level="ERROR">Error in file '/Users/tordoppio/Doppio-Automation/ebay-testing/resouces/website/import.robot' on line 14: Resource file '/Users/tordoppio/Doppio-Automation/ebay-testing/keywords/application/common_website.robot' does not exist.</msg>
+<msg timestamp="20230929 12:03:03.413" level="ERROR">Error in file '/Users/tordoppio/Doppio-Automation/ebay-testing/resouces/website/import.robot' on line 15: Resource file '/Users/tordoppio/Doppio-Automation/ebay-testing/keywords/application/features/test01.robot' does not exist.</msg>
+<msg timestamp="20230929 12:03:03.413" level="ERROR">Error in file '/Users/tordoppio/Doppio-Automation/ebay-testing/resouces/website/import.robot' on line 16: Resource file '/Users/tordoppio/Doppio-Automation/ebay-testing/keywords/application/pages/test01.robot' does not exist.</msg>
+</errors>
+</robot>

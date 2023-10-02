@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.11.3 on darwin)" generated="20230929 17:39:55.287" rpa="false" schemaversion="2">
+<suite id="s1" name="Testcases" source="/Users/tordoppio/Doppio-Automation/ebay-testing/testcases">
+<suite id="s1-s1" name="Application" source="/Users/tordoppio/Doppio-Automation/ebay-testing/testcases/application">
+<suite id="s1-s1-s1" name="INSTANCE01" source="/Users/tordoppio/Doppio-Automation/ebay-testing/testcases/application/INSTANCE01.robot">
+<test id="s1-s1-s1-t1" name="INSTANCE01 - Open ebay">
+<kw name="Open ebay application">
+<kw name="Set Library Search Order" library="BuiltIn">
+<arg>DobbyAppCommon</arg>
+<arg>AppiumLibrary</arg>
+<doc>Sets the resolution order to use when a name matches multiple keywords.</doc>
+<status status="PASS" starttime="20230929 17:39:55.792" endtime="20230929 17:39:55.792"/>
+</kw>
+<if>
+<branch type="IF" condition="'${require_farm}'=='True'">
+<kw name="Init mobile farm configuration" library="DobbyAppCommon">
+<doc>Init doppio mobile farm, Use hand in hand with woody mobile farm management</doc>
+<kw name="Evaluate" library="BuiltIn">
+<var>${pool_to_use}</var>
+<arg>${PABOTEXECUTIONPOOLID}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230929 17:39:55.793" level="INFO">${pool_to_use} = 0</msg>
+<status status="PASS" starttime="20230929 17:39:55.793" endtime="20230929 17:39:55.793"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${delay_time}</var>
+<arg>${pool_to_use}*5</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230929 17:39:55.793" level="INFO">${delay_time} = 0</msg>
+<status status="PASS" starttime="20230929 17:39:55.793" endtime="20230929 17:39:55.793"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>${delay_time}s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230929 17:39:55.793" level="INFO">Slept 0 seconds</msg>
+<status status="PASS" starttime="20230929 17:39:55.793" endtime="20230929 17:39:55.793"/>
+</kw>
+<kw name="Acquire Value Set" library="pabot.PabotLib">
+<var>${valuesetname}</var>
+<arg>set${pool_to_use}</arg>
+<doc>Reserve a set of values for this execution.
+[https://pabot.org/PabotLib.html?ref=log#acquire-value-set|Open online docs.]</doc>
+<msg timestamp="20230929 17:39:55.795" level="INFO">Value set "Set0" acquired</msg>
+<msg timestamp="20230929 17:39:55.795" level="INFO">${valuesetname} = Set0</msg>
+<status status="PASS" starttime="20230929 17:39:55.793" endtime="20230929 17:39:55.795"/>
+</kw>
+<kw name="Get Value From Set" library="pabot.PabotLib">
+<var>${doppioAppiumPort}</var>
+<arg>appium_port</arg>
+<doc>Get a value from previously reserved value set.
+[https://pabot.org/PabotLib.html?ref=log#get-value-from-set|Open online docs.]</doc>
+<msg timestamp="20230929 17:39:55.795" level="INFO">${doppioAppiumPort} = 9990</msg>
+<status status="PASS" starttime="20230929 17:39:55.795" endtime="20230929 17:39:55.795"/>
+</kw>
+<kw name="Get Value From Set" library="pabot.PabotLib">
+<var>${doppioSystemPort}</var>
+<arg>system_port</arg>
+<doc>Get a value from previously reserved value set.
+[https://pabot.org/PabotLib.html?ref=log#get-value-from-set|Open online docs.]</doc>
+<msg timestamp="20230929 17:39:55.795" level="INFO">${doppioSystemPort} = 8201</msg>
+<status status="PASS" starttime="20230929 17:39:55.795" endtime="20230929 17:39:55.795"/>
+</kw>
+<kw name="Get Value From Set" library="pabot.PabotLib">
+<var>${doppioDeviceName}</var>
+<arg>device_info</arg>
+<doc>Get a value from previously reserved value set.
+[https://pabot.org/PabotLib.html?ref=log#get-value-from-set|Open online docs.]</doc>
+<msg timestamp="20230929 17:39:55.795" level="INFO">${doppioDeviceName} = 26ab25c053217ece</msg>
+<status status="PASS" starttime="20230929 17:39:55.795" endtime="20230929 17:39:55.795"/>
+</kw>
+<kw name="Get Value From Set" library="pabot.PabotLib">
+<var>${doppioEmulatorName}</var>
+<arg>emulator_name</arg>
+<doc>Get a value from previously reserved value set.
+[https://pabot.org/PabotLib.html?ref=log#get-value-from-set|Open online docs.]</doc>
+<msg timestamp="20230929 17:39:55.796" level="INFO">${doppioEmulatorName} = 26ab25c053217ece</msg>
+<status status="PASS" starttime="20230929 17:39:55.795" endtime="20230929 17:39:55.796"/>
+</kw>
+<kw name="Get Value From Set" library="pabot.PabotLib">
+<var>${platformVersion}</var>
+<arg>version</arg>
+<doc>Get a value from previously reserved value set.
+[https://pabot.org/PabotLib.html?ref=log#get-value-from-set|Open online docs.]</doc>
+<msg timestamp="20230929 17:39:55.796" level="INFO">${platformVersion} = 11</msg>
+<status status="PASS" starttime="20230929 17:39:55.796" endtime="20230929 17:39:55.796"/>
+</kw>
+<kw name="Get Value From Set" library="pabot.PabotLib">
+<var>${url}</var>
+<arg>remote_url</arg>
+<doc>Get a value from previously reserved value set.
+[https://pabot.org/PabotLib.html?ref=log#get-value-from-set|Open online docs.]</doc>
+<msg timestamp="20230929 17:39:55.796" level="INFO">${url} = 127.0.0.1</msg>
+<status status="PASS" starttime="20230929 17:39:55.796" endtime="20230929 17:39:55.796"/>
+</kw>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${doppioSystemPort_int}</var>
+<arg>${doppioSystemPort}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20230929 17:39:55.796" level="INFO">${doppioSystemPort_int} = 8201</msg>
+<status status="PASS" starttime="20230929 17:39:55.796" endtime="20230929 17:39:55.796"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${deviceName}</arg>
+<arg>${doppioDeviceName}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20230929 17:39:55.796" level="INFO">${deviceName} = 26ab25c053217ece</msg>
+<status status="PASS" starttime="20230929 17:39:55.796" endtime="20230929 17:39:55.796"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${systemPort}</arg>
+<arg>${doppioSystemPort_int}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20230929 17:39:55.797" level="INFO">${systemPort} = 8201</msg>
+<status status="PASS" starttime="20230929 17:39:55.796" endtime="20230929 17:39:55.797"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${udid}</arg>
+<arg>${doppioEmulatorName}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20230929 17:39:55.797" level="INFO">${udid} = 26ab25c053217ece</msg>
+<status status="PASS" starttime="20230929 17:39:55.797" endtime="20230929 17:39:55.797"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${remoteUrl}</arg>
+<arg>http://${url}:${doppioAppiumPort}/wd/hub</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20230929 17:39:55.797" level="INFO">${remoteUrl} = http://127.0.0.1:9990/wd/hub</msg>
+<status status="PASS" starttime="20230929 17:39:55.797" endtime="20230929 17:39:55.797"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${platformVersion}</arg>
+<arg>${platformVersion}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20230929 17:39:55.797" level="INFO">${platformVersion} = 11</msg>
+<status status="PASS" starttime="20230929 17:39:55.797" endtime="20230929 17:39:55.797"/>
+</kw>
+<kw name="Release Value Set" library="pabot.PabotLib">
+<doc>Release a reserved value set so that other executions can use it also.
+[https://pabot.org/PabotLib.html?ref=log#release-value-set|Open online docs.]</doc>
+<status status="PASS" starttime="20230929 17:39:55.797" endtime="20230929 17:39:55.798"/>
+</kw>
+<status status="PASS" starttime="20230929 17:39:55.792" endtime="20230929 17:39:55.798"/>
+</kw>
+<status status="PASS" starttime="20230929 17:39:55.792" endtime="20230929 17:39:55.798"/>
+</branch>
+<status status="PASS" starttime="20230929 17:39:55.792" endtime="20230929 17:39:55.798"/>
+</if>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${capability}</var>
+<arg>automationName=${automation}</arg>
+<arg>platformName=${platformz}</arg>
+<arg>platformVersion=${platformVersion}</arg>
+<arg>deviceName=${deviceName}</arg>
+<arg>
