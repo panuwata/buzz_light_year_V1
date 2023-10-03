@@ -12,3 +12,6 @@ downloads*
 *.png
 *.out
 *appium-screenshot
+.pabotsuitenames
+testcases/.pabotsuitenames
+testcases/application/.pabotsuitenames

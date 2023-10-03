@@ -1,6 +1,7 @@
 *** Keywords ***
 Open ebay application
     BuiltIn.Set Library search order    DobbyAppCommon    AppiumLibrary
+    AppiumLibrary.Set Appium Timeout    ${GLOBAL_TIMEOUT}
     IF  '${require_farm}'=='True'
         DobbyAppCommon.Init mobile farm configuration
     END
@@ -25,9 +26,9 @@ Open ebay application
     ...                                              enforceXPath1=${TRUE}
     ...                 appPackage=${appPackage}
     ...                 appActivity=${appActivity}
-    IF  '${require_farm}'=='True'
-        ${remoteUrl}=    String.Remove string    ${remoteUrl}    /wd/hub
-    END
+    # IF  '${require_farm}'=='True'
+    ${remoteUrl}=    String.Remove string    ${remoteUrl}    /wd/hub
+    # END
     
     BuiltIn.Log                       remote_url=${remoteUrl}
     BuiltIn.Log                       capability=${capability}

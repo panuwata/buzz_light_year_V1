@@ -21,5 +21,3 @@ INSTANCE01 - Verify
     common_website.Open ebay website
     Input search keywords    cola
     Click search button
-
-    Debug

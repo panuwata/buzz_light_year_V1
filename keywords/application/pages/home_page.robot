@@ -12,7 +12,7 @@ Tap sign in button
     DobbyAppCommon.Tap element when ready    id=com.ebay.mobile:id/button_sign_in
 
 Verify sign in button is not displayed
-    AppiumLibrary.Wait until page does not contain element    id=com.ebay.mobile:id/button_sign_in
+    AppiumLibrary.Wait until page does not contain element    id=com.ebay.mobile:id/button_sign_in    timeout=20s
 
 Click menu my ebay
     DobbyAppCommon.Tap element when ready    xpath=//android.widget.FrameLayout[@content-desc="My eBay"]

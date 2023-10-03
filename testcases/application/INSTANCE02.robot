@@ -1,7 +1,7 @@
 *** Settings ***
 Resource    ${CURDIR}/../../resouces/application/import.robot
 Suite Setup    common.Open ebay application
-Suite Teardown    common.Close application
+Test Teardown    common.Close application
 
 *** Test Cases ***
 INSTANCE02 - Verify search result is matches with search keyword

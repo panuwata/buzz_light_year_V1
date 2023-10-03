@@ -16,11 +16,30 @@ Click add product by select option
     # search_page.Click select quantity option
     # search_page.Select quantity option    ${quantity}
     search_page.Click add to cart button on checkout page
-    search_page.Click buy it now
-    search_page.Click close button
+    # search_page.Click buy it now
+    # search_page.Click close button
     # search_page.Click go to cart
     # search_page.Click go to checkout button
     search_page.Click mini cart
     search_page.Click remove button
     search_page.Click back button
+    AppiumLibrary.Go back
+
+Click add product by select option 2
+    [Arguments]    ${number}    ${color}    ${size}
+    search_page.Click first product
+    search_page.Click add to cart button
+    search_page.Click select pack option
+    search_page.Click select number of pack    ${number}
+    search_page.Click select color option
+    search_page.Select color option    ${color}
+    search_page.Click select size
+    search_page.Select size option    ${size}
+    search_page.Click add to cart button on checkout page
+    search_page.Click go to cart
+    search_page.Click go to checkout button
+    search_page.Click close button
+    search_page.Click remove button
+    search_page.Click back button
+    AppiumLibrary.Go back
     AppiumLibrary.Go back
