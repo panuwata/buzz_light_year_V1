@@ -14,26 +14,26 @@ Click first product
 Click add to cart button
     common.Find and tap element when ready    accessibility_id=Add to cart    id=android:id/content    percent=0.5    timeout=1s
 
-Click select pack option
-    DobbyAppCommon.Tap element when ready    xpath=//android.widget.Spinner[@content-desc="PACK,No selection"]
+Click select decal color options
+    DobbyAppCommon.Tap element when ready    xpath=//android.widget.Spinner[@content-desc="Decal Color,No selection"]
 
-Click select number of pack
-    [Arguments]    ${number}
-    DobbyAppCommon.Tap element when ready    xpath=//android.widget.TextView[@text="${number} PACK"]
-
-Click select color option
-    DobbyAppCommon.Tap element when ready    xpath=//android.widget.Spinner[@content-desc="COLOR:,No selection"]
-
-Select color option
+Select color of pack
     [Arguments]    ${color}
     DobbyAppCommon.Tap element when ready    xpath=//android.widget.TextView[@text="${color}"]
 
-Click select size
-    DobbyAppCommon.Tap element when ready    xpath=//android.widget.Spinner[@content-desc="SIZE:,No selection"]
+Click select decal size option
+    DobbyAppCommon.Tap element when ready    xpath=//android.widget.Spinner[@content-desc="Decal Size,No selection"]
 
-Select size option
+Select decal size option
     [Arguments]    ${size}
     DobbyAppCommon.Tap element when ready    xpath=//android.widget.TextView[@text='${size}"']
+
+Click select quantity option
+    DobbyAppCommon.Tap element when ready    xpath=com.ebay.mobile:id/quantity_selection_spinner
+
+Select quantity option
+    [Arguments]    ${quantity}
+    DobbyAppCommon.Tap element when ready    xpath=//android.widget.TextView[@text='${quantity}']
 
 Click add to cart button on checkout page
     DobbyAppCommon.Tap element when ready    id=com.ebay.mobile:id/buy_bar_button
@@ -52,3 +52,9 @@ Click remove button
 
 Click back button
     DobbyAppCommon.Tap element when ready    xpath=//android.widget.ImageButton[@content-desc="Navigate up"]
+
+Click buy it now
+    DobbyAppCommon.Tap element when ready    xpath=//android.widget.Button[@content-desc="Buy It Now"]
+
+Click mini cart
+    DobbyAppCommon.Tap element when ready    id=com.ebay.mobile:id/menu_impl_common_action_cart_icon

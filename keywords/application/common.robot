@@ -25,9 +25,10 @@ Open ebay application
     ...                                              enforceXPath1=${TRUE}
     ...                 appPackage=${appPackage}
     ...                 appActivity=${appActivity}
-
-    ${remoteUrl}=    String.Remove string    ${remoteUrl}    /wd/hub
-
+    IF  '${require_farm}'=='True'
+        ${remoteUrl}=    String.Remove string    ${remoteUrl}    /wd/hub
+    END
+    
     BuiltIn.Log                       remote_url=${remoteUrl}
     BuiltIn.Log                       capability=${capability}
     AppiumLibrary.Open application

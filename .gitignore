@@ -7,5 +7,7 @@
 # mac
 .DS_Store
 downloads*
-pabot*
-pabot_results*
+*pabot
+*pabot_results
+*.png
+*.out
