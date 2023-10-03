@@ -1,0 +1,4 @@
+*** Keywords ***
+
+DummyBear
+    Log  Dummy

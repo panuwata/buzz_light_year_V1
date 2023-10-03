@@ -1,1 +1,11 @@
 *.apk
+*.html
+*.xml
+*.PNG
+*.pyc
+.vscode/launch.json
+# mac
+.DS_Store
+downloads*
+pabot*
+pabot_results*

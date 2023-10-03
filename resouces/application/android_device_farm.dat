@@ -1,0 +1,29 @@
+[Set]
+tags = set0
+platform = android
+remote_url = 127.0.0.1
+device_info = emulator-5554
+appium_port = 9990
+emulator_name = emulator-5554
+system_port = 18087
+version = 11
+
+[Set1]
+tags = set1
+platform = android
+remote_url = 127.0.0.1
+device_info = emulator-5556
+appium_port = 9993
+emulator_name = emulator-5556
+system_port = 18089
+version = 11
+
+[Set2]
+tags = set2
+platform = android
+remote_url = 127.0.0.1
+device_info = emulator-5558
+appium_port = 9996
+emulator_name = emulator-5558
+system_port = 18091
+version = 11

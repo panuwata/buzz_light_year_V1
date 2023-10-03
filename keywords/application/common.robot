@@ -4,8 +4,8 @@ Open ebay application
     IF  '${require_farm}'=='True'
         DobbyAppCommon.Init mobile farm configuration
     END
-    ${capability}=                                   BuiltIn.Create dictionary             
-    ...                                              automationName=${automation}
+    &{capability}=                                   BuiltIn.Create dictionary             
+    ...                                              automationName=${automation.lower()}
     ...                                              platformName=${platformz}
     ...                                              platformVersion=${platformVersion}
     ...                                              deviceName=${deviceName}
@@ -19,12 +19,14 @@ Open ebay application
     ...                                              autoAcceptAlerts=${TRUE}
     ...                                              autoDismissAlerts=${TRUE}
     ...                                              systemPort=${systemPort}
-    ...                                              language=${LANG}
-    ...                                              locale=${LANG.upper()}
+    # ...                                              language=${LANG}
+    # ...                                              locale=${LANG.upper()}
     ...                                              wdaLocalPort=${systemPort}
     ...                                              enforceXPath1=${TRUE}
     ...                 appPackage=${appPackage}
     ...                 appActivity=${appActivity}
+
+    ${remoteUrl}=    String.Remove string    ${remoteUrl}    /wd/hub
 
     BuiltIn.Log                       remote_url=${remoteUrl}
     BuiltIn.Log                       capability=${capability}
