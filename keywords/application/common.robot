@@ -42,3 +42,8 @@ Find and tap element when ready
     DobbyAppCommon.Find element    ${locator}    ${scroll_view}    ${default_scroll_view}    ${moveto}
     ...    ${percent}    ${number_of_scroll}    ${timeout}
     DobbyAppCommon.Tap element when ready    ${locator}
+
+Close application
+    Run keyword and ignore error    AppiumLibrary.Capture page screenshot
+    Run keyword if test failed      Run keyword and ignore error    AppiumLibrary.Log source
+    AppiumLibrary.Close all applications
