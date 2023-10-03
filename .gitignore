@@ -15,3 +15,7 @@ downloads*
 .pabotsuitenames
 testcases/.pabotsuitenames
 testcases/application/.pabotsuitenames
+testcases/reports/pabot_results/0/robot_stderr.out
+*.out
+*.out
+*.html

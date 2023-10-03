@@ -6,7 +6,6 @@ deviceName: 26ab25c053217ece
 udid: 26ab25c053217ece
 systemPort: 18087
 enforceXPath1: 60000
-noReset: true
 appPackage: com.ebay.mobile
 appActivity: com.ebay.mobile.home.impl.main.MainActivity
 require_farm: false

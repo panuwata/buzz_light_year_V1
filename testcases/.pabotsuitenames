@@ -1,5 +1,8 @@
-datasources:25b761d201a2731493442bc41f1fdebc17eba59d
-commandlineoptions:bc112598bbcece4ede3bebefac945b8d1a567a8d
+datasources:c646d1dbbcb3305b4a0a452ec1fdd15518cde8a5
+commandlineoptions:13be676a9e7256b7bbee13c8b28c7d41a032371a
 suitesfrom:no-suites-from-option
-file:22fe4e745bcceafe5dfc4973bc522e46d59a239d
+file:75fa2060d0d71cc89047dd713b2d5ec11d44ced2
 --suite Testcases.Application.INSTANCE01
+--suite Testcases.Application.INSTANCE02
+--suite Testcases.Application.INSTANCE03
+--suite Testcases.Application.INSTANCE04

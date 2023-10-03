@@ -4,7 +4,9 @@ Suite Setup    common.Open ebay application
 Test Teardown    common.Close application
 
 *** Test Cases ***
-INSTANCE01 - Verify that customer able to sign in and sign out application
-    [Tags]    INSTANCE    Signin_Signout
+INSTANCE02 - Verify search result is matches with search keyword
+    [Tags]    INSTANCE    addproduct1
     login_feature.Login to ebay application    panuwat.a@doppiotech.com    Shinemoon1!
+    search_feature.Search and verify results is corresponded with search keyword    Cola
+    search_feature.Click add product by select option    Red    5    2
     home_feature.Sign out username to ebay application

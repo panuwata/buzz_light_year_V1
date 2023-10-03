@@ -1,5 +1,6 @@
 *** Keywords ***
 Open ebay application
+    AppiumLibrary.Set appium timeout    ${GLOBAL_TIMEOUT}
     BuiltIn.Set Library search order    DobbyAppCommon    AppiumLibrary
     AppiumLibrary.Set Appium Timeout    ${GLOBAL_TIMEOUT}
     IF  '${require_farm}'=='True'
@@ -13,6 +14,7 @@ Open ebay application
     ...                                              udid=${udid}
     # ...                                              app=${app}
     ...                                              noReset=${noReset}
+    ...                                              fullReset=${fullReset}
     ...                                              newCommandTimeout=${0}
     ...                                              autoGrantPermissions=${TRUE}
     ...                                              unicodeKeyboard=${FALSE}
@@ -26,9 +28,10 @@ Open ebay application
     ...                                              enforceXPath1=${TRUE}
     ...                 appPackage=${appPackage}
     ...                 appActivity=${appActivity}
-    # IF  '${require_farm}'=='True'
-    ${remoteUrl}=    String.Remove string    ${remoteUrl}    /wd/hub
-    # END
+    IF  '${require_farm}'=='True'
+    # ${remoteUrl}=    String.Remove string    ${remoteUrl}    /wd/hub
+        ${remoteUrl}=    String.Remove string    ${remoteUrl}    /wd/hub
+    END
     
     BuiltIn.Log                       remote_url=${remoteUrl}
     BuiltIn.Log                       capability=${capability}
