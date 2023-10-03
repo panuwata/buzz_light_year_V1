@@ -1,7 +1,7 @@
 *** Settings ***
 Resource    ${CURDIR}/../../resouces/application/import.robot
 Suite Setup    common.Open ebay application
-Suite Teardown    AppiumLibrary.Close application
+Suite Teardown    common.Close application
 
 *** Test Cases ***
 INSTANCE01 - Verify that customer able to sign in and sign out application
