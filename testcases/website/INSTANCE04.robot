@@ -4,9 +4,10 @@ Test Setup    common.Open ebay website
 Test Teardown    DobbyWebCommon.Default test teardown
 
 *** Test Cases ***
-INSTANCE04 - Verify ebay able to login ebay is work properly
-    [Tags]    INSTANCE1   xx
-    common.Landing to other page by link    https://www.ebay.com/itm/134638042371?_trkparms=pageci%3Aa7844d4b-6208-11ee-90f0-0eac0a3c8356%7Cparentrq%3Af65686a718a0a55191639dbfffff3b98%7Ciid%3A1&var=434175605789
-    product_details_page.Click add to cart button
-    product_details_page.Click go to checkout
-    login_page.Verify greeting message is displayed
+INSTANCE04 - Verify customer can able register with valid email
+    [Tags]    INSTANCE-WEB
+    ${username}=    login_feature.Register doppee website with random username    panuwat.doppio@gmail.com    BuzzLightYaer01!
+    login_feature.Verify popup failed is displayed    Register page    Register successfully
+    login_page.Click user login button on topbar
+    customer_information_page.Verify email is displayed    ${username}
+    customer_information_page.Click logout button

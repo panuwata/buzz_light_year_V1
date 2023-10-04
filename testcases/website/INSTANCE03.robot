@@ -4,6 +4,7 @@ Test Setup    common.Open ebay website
 Test Teardown    DobbyWebCommon.Default test teardown
 
 *** Test Cases ***
-INSTANCE03 - Verify ebay able to login ebay is work properly
-    [Tags]    INSTANCE1
-    login_feature.Login ebay website    panuwat.doppio@gmail.com    Shinemoon1!
+INSTANCE03 - Verify customer can't register with invid email
+    [Tags]    INSTANCE-WEB
+    login_feature.Register doppee website    panuwat.doppio+1@gmail.com    BuzzLightYaer01!
+    login_feature.Verify popup failed is displayed    Register page    Register Failed

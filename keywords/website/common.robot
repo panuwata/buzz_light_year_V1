@@ -9,3 +9,6 @@ Open ebay website
 Landing to other page by link
     [Arguments]    ${link}
     SeleniumLibrary.Go to    ${link}
+
+Click mini cart icon
+    DobbyWebCommon.Click element when ready    (//*[local-name()="svg"][@data-icon="shopping-cart"])[1]

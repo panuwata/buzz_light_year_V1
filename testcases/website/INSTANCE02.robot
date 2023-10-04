@@ -4,9 +4,10 @@ Test Setup    common.Open ebay website
 Test Teardown    DobbyWebCommon.Default test teardown
 
 *** Test Cases ***
-INSTANCE02 - Verify product details is work properly
-    [Tags]    INSTANCE1
-    login_feature.Login ebay website    panuwat.doppio@gmail.com    Shinemoon1!
-    product_details_page.Select popular brand    มือถือและสมาร์ทโฟน
-    product_details_page.Select shop by brand    Apple
-    product_details_feature.Select item then verify product is displayed    Apple iPhone 13 Pro Max    iPhone 13 Pro Max
+INSTANCE02 - Verify login with valid username
+    [Tags]    INSTANCE-WEB
+    login_feature.Login doppee website    panuwat.doppio@gmail.com      BuzzLightYear0!
+    login_feature.Verify popup successfully is displayed    Login page    Login successfully
+    login_page.Click user login button on topbar
+    customer_information_page.Verify email is displayed    panuwat.doppio@gmail.com
+    customer_information_page.Click logout button

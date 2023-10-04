@@ -7,6 +7,6 @@ Login to ebay application
     END
     home_page.Tap sign in button
     login_page.Tap login email or username 
-    login_page.Input email or username    ${email_or_username}
+    login_page.Input username    ${email_or_username}
     login_page.Input password    ${password}
-    login_page.Click sign in button
+    login_page.Click login button

@@ -1,5 +1,5 @@
 *** Keywords ***
-Input email or username
+Input username
     [Arguments]    ${username}
     DobbyAppCommon.Input text to element when ready    id=com.ebay.mobile:id/edit_text_username    ${username}
 
@@ -13,7 +13,7 @@ Tap login email or username
 Verify login email or username button is displayed
     DobbyAppCommon.Wait until element is visible except stale    id=com.ebay.mobile:id/button_classic
 
-Click sign in button
+Click login button
     DobbyAppCommon.Tap element when ready    id=com.ebay.mobile:id/button_sign_in
 
 Verify logo ebay is displayed
