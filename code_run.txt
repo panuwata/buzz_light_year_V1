@@ -1,0 +1,7 @@
+Real devices 
+
+pabot --pabotlib --pabotlibport 0 --processes 3  --resourcefile /Users/admin/Documents/GitHub/buzz_light_year_V1/resouces/application/android_realdevice_farm.dat -v noReset:true -v fullReset:false -v require_farm:True -v system:application -i INSTANCE -d reports .
+
+Emulator
+
+pabot --pabotlib --pabotlibport 0 --processes 3  --resourcefile /Users/admin/Documents/GitHub/buzz_light_year_V1/resouces/application/android_device_farm.dat -v noReset:true -v fullReset:false -v require_farm:True -v system:application -i INSTANCE -d reports .

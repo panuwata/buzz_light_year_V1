@@ -24,3 +24,21 @@ Click add to cart button
 
 Click go to checkout
     DobbyWebCommon.Click element when ready    //button[@data-test-id="cta-top"]
+
+Click select product by product name
+    [Arguments]    ${product_name}
+    DobbyWebCommon.Click element when ready    xpath=//li[contains(@id,"item")]//span[text()="${product_name}"]
+
+Select decal color by color name
+    [Arguments]    ${color_type}
+    ${status}=    BuiltIn.Run keyword and return status    DobbyWebCommon.Wait until element is visible except stale    xpath=//select[contains(@selectboxlabel,"Decal Color")]
+    IF  ${status}
+        SeleniumLibrary.Select from list by label    xpath=//select[contains(@selectboxlabel,"Decal Color")]   ${color_type}
+    END
+
+Select decal size by size
+    [Arguments]    ${size}
+    ${status}=    BuiltIn.Run keyword and return status    DobbyWebCommon.Wait until element is visible except stale    xpath=//select[contains(@selectboxlabel,"Decal Size")]
+    IF  ${status}
+        SeleniumLibrary.Select from list by label    xpath=//select[contains(@selectboxlabel,"Decal Size")]   ${size}
+    END

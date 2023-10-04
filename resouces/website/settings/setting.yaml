@@ -1,2 +1,2 @@
-base_url: https://www.ebay.com/
-GLOBAL_TIMEOUT: 10
+base_url: https://training-platform.doppio-tech.com/
+GLOBAL_TIMEOUT: 20
