@@ -1,4 +1,4 @@
-remoteUrl: http://127.0.0.1:4725/wd/hub
+remoteUrl: http://127.0.0.1:9993/wd/hub
 automation: UiAutomator2
 platformz: android
 platformVersion: '12'

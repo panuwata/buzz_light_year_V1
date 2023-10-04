@@ -28,10 +28,12 @@ Open ebay application
     ...                                              enforceXPath1=${TRUE}
     ...                 appPackage=${appPackage}
     ...                 appActivity=${appActivity}
-    # IF  '${require_farm}'=='True'
-    # # ${remoteUrl}=    String.Remove string    ${remoteUrl}    /wd/hub
-    #     ${remoteUrl}=    String.Remove string    ${remoteUrl}    /wd/hub
-    # END
+    IF  '${require_farm}'=='True'
+    # ${remoteUrl}=    String.Remove string    ${remoteUrl}    /wd/hub
+        ${remoteUrl}=    String.Remove string    ${remoteUrl}    /wd/hub
+    END
+    ${remoteUrl}=    String.Remove string    ${remoteUrl}    /wd/hub
+
     
     BuiltIn.Log                       remote_url=${remoteUrl}
     BuiltIn.Log                       capability=${capability}

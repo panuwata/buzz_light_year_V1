@@ -12,7 +12,7 @@ Click coca cola decal
     common.Find and tap element when ready    xpath=//android.widget.TextView[@text="Coca-Cola Decal YOU PICK SIZE AND COLOR!! #212"]    id=android:id/content    percent=0.5    timeout=1s
 
 Click add to cart button
-    common.Find and tap element when ready    accessibility_id=Add to cart    id=android:id/content    percent=0.5    timeout=1s
+    common.Find and tap element when ready    xpath=//android.widget.Button[@content-desc="Add to cart" or @content-desc="Add to basket"]    id=android:id/content    percent=0.5    timeout=1s
 
 Click select decal color options
     DobbyAppCommon.Tap element when ready    xpath=//android.widget.Spinner[@content-desc="Decal Color,No selection"]
@@ -84,10 +84,10 @@ Tap save this search noti
     DobbyAppCommon.Tap element when ready    id=com.ebay.mobile:id/text_slot_1
 
 Verify noti save this search is displayed
-    DobbyAppCommon.Wait until element is visible except stale    id=com.ebay.mobile:id/text_slot_1    timeout=10s
+    AppiumLibrary.Wait until element is visible      id=com.ebay.mobile:id/text_slot_1    timeout=10s
 
 Skip noti save this search
     ${status}=    BuiltIn.Run keyword and return status    search_page.Verify noti save this search is displayed
     IF  ${status}
-        search_page.Verify noti save this search is displayed
+        search_page.Tap save this search noti
     END
