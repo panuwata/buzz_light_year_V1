@@ -10,6 +10,7 @@ Search product
     home_page.Click search bar
     home_page.Input search keywords    ${search_keywords}
     AppiumLibrary.Wait until page does not contain element    xpath=//android.widget.LinearLayout[@resource-id="com.ebay.mobile:id/progressContainer"]//android.widget.ProgressBar    timeout=${GLOBAL_TIMEOUT}
+    search_page.Skip noti save this search
 
 Click add product by select option
     [Arguments]    ${color}    ${size}    ${quantity}
