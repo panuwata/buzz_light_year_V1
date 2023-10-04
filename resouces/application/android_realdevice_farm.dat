@@ -2,24 +2,14 @@
 tags = set0
 platform = android
 remote_url = 127.0.0.1
-device_info = 26ab25c053217ece
-appium_port = 9990
-emulator_name = 26ab25c053217ece
-system_port = 8301
-version = 10
-
-[Set1]
-tags = set1
-platform = android
-remote_url = 127.0.0.1
 device_info = ce061716bb6050780d7e
 appium_port = 9993
 emulator_name = ce061716bb6050780d7e
 system_port = 18001
 version = 11
 
-[Set2]
-tags = set2
+[Set1]
+tags = set1
 platform = android
 remote_url = 127.0.0.1
 device_info = RF8M83DVY3E
@@ -28,8 +18,8 @@ emulator_name = RF8M83DVY3E
 system_port = 18005
 version = 11
 
-[Set3]
-tags = set3
+[Set2]
+tags = set2
 platform = android
 remote_url = 127.0.0.1
 device_info = d2d1eacb
