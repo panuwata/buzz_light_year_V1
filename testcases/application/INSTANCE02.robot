@@ -6,4 +6,4 @@ Test Teardown    common.Close application
 *** Test Cases ***
 INSTANCE02 - Verify search result is matches with search keyword
     [Tags]    INSTANCE    search
-    search_feature.Search and verify results is corresponded with search keyword    Cola
+    search_feature.Search product   Cola

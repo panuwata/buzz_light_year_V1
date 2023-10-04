@@ -10,6 +10,9 @@ Input password
 Tap login email or username 
     DobbyAppCommon.Tap element when ready    id=com.ebay.mobile:id/button_classic
 
+Verify login email or username button is displayed
+    DobbyAppCommon.Wait until element is visible except stale    id=com.ebay.mobile:id/button_classic
+
 Click sign in button
     DobbyAppCommon.Tap element when ready    id=com.ebay.mobile:id/button_sign_in
 

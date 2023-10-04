@@ -8,8 +8,8 @@ Verify search result is contains with search keyword
         BuiltIn.Should contain    ${product_name}    ${search_keywords}    msg=product is not contains    ignore_case=${true}
     END
 
-Click first product
-    DobbyAppCommon.Tap element when ready    xpath=(//android.widget.TextView[@resource-id="com.ebay.mobile:id/textview_header_0"])[1]
+Click coca cola decal
+    common.Find and tap element when ready    xpath=//android.widget.TextView[@text="Coca-Cola Decal YOU PICK SIZE AND COLOR!! #212"]    id=android:id/content    percent=0.5    timeout=1s
 
 Click add to cart button
     common.Find and tap element when ready    accessibility_id=Add to cart    id=android:id/content    percent=0.5    timeout=1s
@@ -58,3 +58,24 @@ Click buy it now
 
 Click mini cart
     DobbyAppCommon.Tap element when ready    id=com.ebay.mobile:id/menu_impl_common_action_cart_icon
+
+Click select pack option
+    DobbyAppCommon.Tap element when ready    xpath=//android.widget.Spinner[@content-desc="PACK,No selection"]
+
+Click select number of pack
+    [Arguments]    ${number}
+    DobbyAppCommon.Tap element when ready    xpath=//android.widget.TextView[@text="${number} PACK"]
+
+Click select color option
+    DobbyAppCommon.Tap element when ready    xpath=//android.widget.Spinner[@content-desc="COLOR:,No selection"]
+
+Select color option
+    [Arguments]    ${color}
+    DobbyAppCommon.Tap element when ready    xpath=//android.widget.TextView[@text="${color}"]
+
+Click select size
+    DobbyAppCommon.Tap element when ready    xpath=//android.widget.Spinner[@content-desc="SIZE:,No selection"]
+
+Select size option
+    [Arguments]    ${size}
+    DobbyAppCommon.Tap element when ready    xpath=//android.widget.TextView[@text='${size}"']

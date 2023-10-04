@@ -5,7 +5,7 @@ remote_url = 127.0.0.1
 device_info = emulator-5554
 appium_port = 9990
 emulator_name = emulator-5554
-system_port = 18333
+system_port = 9090
 version = 11
 
 [Set1]
@@ -15,7 +15,7 @@ remote_url = 127.0.0.1
 device_info = emulator-5556
 appium_port = 9993
 emulator_name = emulator-5556
-system_port = 18222
+system_port = 9060
 version = 11
 
 [Set2]
@@ -25,5 +25,5 @@ remote_url = 127.0.0.1
 device_info = emulator-5558
 appium_port = 9996
 emulator_name = emulator-5558
-system_port = 18111
+system_port = 9080
 version = 11

@@ -1,23 +1,16 @@
 *** Settings ***
 Resource    ${CURDIR}/../../resouces/website/import.robot
-
-*** Variables ***
-&{home_page}
-...    txt_search_box=xpath=//input[@aria-label="Search for anything"]
-...    btn_search=xpath=//input[@value="Search"]
-...    lbl_li_items=xpath=//li[contains(@id,"item")]
-
-*** Keywords ***
-Input search keywords
-    [Arguments]    ${search_keywords}
-    DobbyWebCommon.Input text to element when ready    ${home_page['txt_search_box']}    ${search_keywords}
-
-Click search button
-    DobbyWebCommon.Click element when ready    ${home_page['btn_search']}
-
+Test Setup    common.Open ebay website
+Test Teardown    DobbyWebCommon.Default test teardown
 
 *** Test Cases ***
-INSTANCE01 - Verify 
-    common_website.Open ebay website
-    Input search keywords    cola
-    Click search button
+INSTANCE01 - Verify able to search product
+    [Tags]    INSTANCE
+    search_page.Input search keywords    Cola
+    search_page.Click search button
+    search_page.Click product by product name    NEW COCA COLA Y3000 LIMITED EDITION FLAVOR 10 MINI CANS COKE CO-CREATED WITH AI
+    ${handles}=    SeleniumLibrary.Get window handles
+    SeleniumLibrary.Switch Window  ${handles}[1]
+    product_details_page.Click button add to cart
+    check_out_page.Click remove button
+    login_page.Verify button sign in is displayed
