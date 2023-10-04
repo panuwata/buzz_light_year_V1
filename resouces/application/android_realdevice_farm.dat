@@ -15,17 +15,17 @@ remote_url = 127.0.0.1
 device_info = ce061716bb6050780d7e
 appium_port = 9993
 emulator_name = ce061716bb6050780d7e
-system_port = 8305
+system_port = 18001
 version = 11
 
 [Set2]
 tags = set2
 platform = android
 remote_url = 127.0.0.1
-device_info = 70e39afc0504
-appium_port = 9995
-emulator_name = 70e39afc0504
-system_port = 8308
+device_info = RF8M83DVY3E
+appium_port = 9996
+emulator_name = RF8M83DVY3E
+system_port = 18005
 version = 11
 
 [Set3]
@@ -35,5 +35,5 @@ remote_url = 127.0.0.1
 device_info = d2d1eacb
 appium_port = 9998
 emulator_name = d2d1eacb
-system_port = 8311
+system_port = 18009
 version = 11

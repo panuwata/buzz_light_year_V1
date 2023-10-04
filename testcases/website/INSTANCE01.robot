@@ -5,7 +5,7 @@ Test Teardown    DobbyWebCommon.Default test teardown
 
 *** Test Cases ***
 INSTANCE01 - Verify able to search product
-    [Tags]    INSTANCE
+    [Tags]    INSTANCE1
     search_page.Input search keywords    Cola
     search_page.Click search button
     search_page.Click product by product name    NEW COCA COLA Y3000 LIMITED EDITION FLAVOR 10 MINI CANS COKE CO-CREATED WITH AI
