@@ -1,7 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
 Library    DebugLibrary
-Library    /Users/tordoppio/Doppio-Automation/buzz_light_year_V1/qr.py
 
 
 #Dobby-Library
